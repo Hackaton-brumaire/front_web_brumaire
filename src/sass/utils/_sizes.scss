@@ -57,3 +57,9 @@ $screen-lgCustom-desktop: $screen-lgCustom-min !default;
         @content;
     }
 }
+
+@mixin max-height {
+    @media (min-width: $screen-smCustom-min) {
+        @content;
+    }
+}

@@ -1,0 +1,119 @@
+.view--admin{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  .header{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin-bottom: 50px;
+    .header-admin{
+      font-size: 30px;
+      line-height: 40px;
+      font-weight:600;
+      color: #af9387;
+      margin-bottom: 30px;
+    }
+    .choice-section{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .title-section-choice{
+        margin-right: 200px;
+        transition: all 0.3s;
+        padding: 30px;
+        border-radius:10px ;
+        background-color: #FFF;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(109,109,109,0.15);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(109,109,109,0.15);
+        box-shadow: 0px 0px 10px 0px rgba(109,109,109,0.15);
+        color: #af9387;
+        font-size: 20px;
+        line-height:25px;
+        font-weight: 600;
+        cursor: pointer;
+        &.expt-margin{
+          margin-right:0;
+        }
+        &:hover{
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  .container-admin{
+    display: flex;
+    flex-direction: column;
+    .container-gestion{
+      width: calc(100%);
+      margin-right: 20px;
+      display: flex;
+      flex-direction: column;
+      .title-gestion{
+        font-size: 25px;
+        line-height: 30px;
+        color: #af9387;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+      .content-gestion{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius:10px;
+        margin-top:15px;
+        align-items: center;
+        background-color: #FFFFFF;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(175, 147, 135,0.15);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(175, 147, 135,0.15);
+        box-shadow: 0px 0px 5px 10px rgba(175, 147, 135,0.15);
+        .title-user{
+          margin-right: 20px;
+          font-size: 20px;
+          line-height:24px;
+          color: #af9387;
+        }
+        .button-change{
+          cursor: pointer;
+          padding: 15px;
+          text-align: center;
+          font-size: 16px;
+          line-height:18px;
+          transition: all 0.3s;
+          border-radius:5px;
+          margin-right:20px;
+          color: #FFF;
+          width:200px;
+          &.expt-margin-button{
+            margin-right:0;
+          }
+          &:hover{
+            transform:scale(1.02);
+          }
+          &.modify{
+            background-color: #FFFFFF;
+            border:1px solid green;
+            color: green;
+            &:hover{
+              background-color: green;
+              color: #FFF;
+            }
+          }
+          &.delete{
+            background-color: #FFFFFF;
+            border:1px solid red;
+            color: red;
+            &:hover{
+              background-color: red;
+              color: #FFF;
+            }
+          }
+        }
+      }
+    }
+  }
+}

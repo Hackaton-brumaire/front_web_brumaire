@@ -6,13 +6,35 @@
 @import "./utils/mixins";
 @import "./utils/_settings";
 // Layouts
-
+@import './layouts/header';
+@import './layouts/footer';
 
 // Components
-
+@import './component/verticalProgress';
 // Pages
 @import "./pages/home";
+@import "./pages/admin";
+@import "./pages/profile";
 
 
+html,
+body {
+  font-family: "Poppins";
+  color: #2e2e2e;
+  overflow: auto;
 
+  button{
+    font-family: "Poppins";
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  input{
+    -webkit-appearance: none;
+  }
+}
 

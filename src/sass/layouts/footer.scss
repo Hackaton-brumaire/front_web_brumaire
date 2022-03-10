@@ -1,0 +1,15 @@
+.view-footer{
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-top: 1px solid #c4C4C4;
+  .title-footer{
+    position: relative;
+    left: 50%;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    transform: translateX(-50%);
+
+  }
+}
