@@ -1,7 +1,6 @@
 import React from 'react';
 
 import AccordionRow from './AccordionRow';
-import '../../sass/Pages/Faq.css';
 
 export default function FaqAccoordion(props) {
     const items = props.items

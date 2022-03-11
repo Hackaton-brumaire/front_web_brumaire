@@ -1,14 +1,22 @@
 import React from 'react';
 import {useForm} from "react-hook-form";
+import AuthService from "../api/AuthService";
+import {useHistory} from "react-router-dom";
 
 const Login = () => {
+    const history = useHistory();
     const {
         register,
         handleSubmit,
         formState: { errors },
     } = useForm();
-
-    const onSubmit = (data) => console.log(data);
+    const user =  localStorage.getItem("user")
+    const onSubmit = (data) => {
+        AuthService.login(data).then(res => {
+            localStorage.setItem("user", res.data)
+        });
+        history.push("/");
+    };
 
     return (
         <div className="view--login">

@@ -1,17 +1,11 @@
 import axios from "axios";
 const API_URL = "https://geo-brumaire-api.herokuapp.com/api/auth/";
 class AuthService {
-    login(username, password) {
+    login(data) {
         return axios
-            .post(API_URL + "login", {
-                username,
-                password,
-            })
+            .post(API_URL + "login", data)
             .then(response => {
-                if (response.cookie.connect.sid) {
-                    localStorage.setItem("user", JSON.stringify(response.data));
-                }
-                return response.data;
+                localStorage.setItem("user", JSON.stringify(response.data));
             });
     }
 
@@ -19,16 +13,12 @@ class AuthService {
         localStorage.removeItem("user");
     }
 
-    register(username, email, password) {
-        return axios.post(API_URL + "register", {
-            username,
-            email,
-            password
-        });
+    register(data) {
+        return axios.post(API_URL + "register", data);
     }
 
     getCurrentUser() {
-        return JSON.parse(localStorage.getItem('user'));;
+        return JSON.parse(localStorage.getItem('user'));
     }
 }
 export default new AuthService();

@@ -1,14 +1,24 @@
 import React from 'react';
 import {useForm} from "react-hook-form";
+import AuthService from "../api/AuthService";
+import {useHistory} from "react-router-dom";
 
 const Register = () => {
+    const history = useHistory();
     const {
         register,
         handleSubmit,
         formState: { errors },
     } = useForm();
 
-    const onSubmit = (data) => console.log(data);
+    const onSubmit = (data) => {
+        console.log(data)
+        AuthService.register(data).then(res => {
+            localStorage.setItem("user", res.data)
+        });
+        history.push("/");
+
+    };
 
     return (
         <div className="view--register">
@@ -24,11 +34,7 @@ const Register = () => {
                         </div>
                         <div className="container-input">
                             <div className="title-input">Password</div>
-                            <input {...register('password', { required: true , minLength:5})} />
-                        </div>
-                        <div className="container-input">
-                            <div className="title-input">ScooterId</div>
-                            <input {...register('scooterId', { required: true })} />
+                            <input type="password" {...register('password', { required: true , minLength:5})} />
                         </div>
                         <div className="container-input">
                             <div className="title-input">E-mail</div>

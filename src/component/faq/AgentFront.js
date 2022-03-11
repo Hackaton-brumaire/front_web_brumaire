@@ -2,14 +2,14 @@ import React, {Component} from 'react';
 import {CometChat} from '@cometchat-pro/chat';
 import MDSpinner from "react-md-spinner";
 import config from './Config.js';
-import 'react-chat-widget/lib/styles.css';
+
 
 
 const agentUID = config.agentUID;
 const AGENT_MESSAGE_LISTENER_KEY = 'agent-listener'
 const limit = 30;
 
-class Agent extends Component {
+class AgentFront extends Component {
 
   state = {
     customers: [],
@@ -243,4 +243,4 @@ class CustomerList extends Component {
   }
 }
 
-export default Agent;
+export default AgentFront;

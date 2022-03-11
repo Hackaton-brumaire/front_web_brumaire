@@ -1,7 +1,6 @@
 import React from "react"
-import '../sass/Pages/Faq.css';
-import FaqAccoordion from "../componentes/faq/FaqAccoordion"
-import Client from "../componentes/faq/Client";
+import FaqAccoordion from "../component/faq/FaqAccoordion"
+import Client from "../component/faq/Client";
 
 const Faq = () => {
     let items = [{question: "bonjour1", response: "cava1"}, {question: "bonjour2", response: "cava2"}]

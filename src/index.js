@@ -4,7 +4,7 @@ import './sass/App.scss';
 import App from "./App";
 import 'bootstrap/dist/css/bootstrap.css';
 import { CometChat } from '@cometchat-pro/chat';
-import config from './componentes/faq/Config.js';
+import config from './component/faq/Config.js';
 
 
 CometChat.init(config.appID)
