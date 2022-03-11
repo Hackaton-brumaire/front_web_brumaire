@@ -28,7 +28,7 @@ const Header = ({islogged = false}) => {
                         {
                             user !== null &&
                             <Link to="/faq" style={{textDecoration: "none"}}>
-                                <div className="title-route">Faq</div>
+                                <div className="title-route">FAQ</div>
                             </Link>
                         }
                         <Link to="/map" style={{textDecoration: "none"}}>

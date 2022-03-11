@@ -34,19 +34,19 @@ const Profile = () => {
                         <form onSubmit={handleSubmit(onSubmit)} className="form-login">
                             <div className="container-input">
                                 <div className="title-input">Username</div>
-                                <input {...register('username', { required: true })} />
+                                <input  defaultValue="Brumaire" {...register('username', { required: true })} />
                             </div>
                             <div className="container-input">
                                 <div className="title-input">Password</div>
-                                <input type="password" {...register('password', { required: true })} />
+                                <input defaultValue="toto" type="password" {...register('password', { required: true })} />
                             </div>
                             <div className="container-input">
                                 <div className="title-input">ScooterId</div>
-                                <input {...register('scooterId', { required: true })} />
+                                <input defaultValue="FR25552822939" {...register('scooterId', { required: true })} />
                             </div>
                             <div className="container-input">
                                 <div className="title-input">Mail</div>
-                                <input {...register('mail', { required: true })} />
+                                <input defaultValue="emile@brumaire.fr" {...register('mail', { required: true })} />
                             </div>
                             <button className="button-submit">Enregister</button>
                         </form>
