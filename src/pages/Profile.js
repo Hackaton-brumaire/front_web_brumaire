@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {useForm} from "react-hook-form";
-import VerticalProgress from "../component/VerticalProgress";
-
+import ProgressBar from 'react-bootstrap/ProgressBar'
 
 const Profile = () => {
     const {
@@ -15,6 +14,11 @@ const Profile = () => {
 
     const changeCoupon = () => {
         console.log("changeCoupon")
+    }
+
+    const changeTest = () => {
+        setPoint(100)
+        setArrayTicket({"cc":"cc"})
     }
 
     console.log(arrayTicket)
@@ -50,6 +54,9 @@ const Profile = () => {
                 </div>
                 <div className="right-part">
                     <div className="container-coupon">
+                        <div className="content-description">Roule ma poule !</div>
+                        <div className="content-description font">Fait des kilomettres est gagne des recharges gratuites !!! </div>
+                        <ProgressBar color="success" now={point} label={`${point}%`} />
                         <div className="content-change">
                             <div>
                                 <img src="assets/recharge.png" alt=""/>
@@ -65,7 +72,7 @@ const Profile = () => {
                            </div>
                         <div className="content-display-coupon">
                             <div className="content-coupon">
-                                <img src="assets/coupon.png" alt="coupon"/>
+                                <img src="assets/coupon.png" onClick={()=> changeTest()} alt="coupon"/>
                                 <div className="title-container">
                                     <div className="title-coupon">Numero : jdezjdzejzdej</div>
                                     <div className="title-coupon">Created: 22/22/22</div>

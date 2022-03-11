@@ -1,0 +1,75 @@
+.view--register{
+  display:flex;
+  flex-direction: column;
+  .container-register{
+    display: flex;
+    align-items: center;
+    .left-form{
+      position:relative;
+      width: 40%;
+      height: 100vh;
+      margin-right: 20px;
+      background-image: url("https://global-uploads.webflow.com/5f1a994364b3473c65835692/6141ca7a85516e850583a86c_Scoot_Beige.jpg");
+      background-size: cover;
+      background-position: 50% 50%;
+      .title-form{
+        position: absolute;
+        font-size: 30px;
+        line-height: 40px;
+        font-weight:500;
+        color: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+    }
+    .right-form{
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      align-items: center;
+      justify-content: center;
+      .form-login{
+        display: flex;
+        flex-direction: column;
+        .container-input{
+          display: flex;
+          flex-direction: column;
+          .title-input{
+            font-size: 12px;
+            line-height: 12px;
+            color: #af9387;
+            font-weight:400;
+            margin-bottom: 10px;
+          }
+          input{
+            width: 400px;
+            padding: 10px;
+            border: 1px solid #af9387;
+            color: #000;
+            border-radius:5px;
+            margin-bottom: 30px;
+          }
+        }
+        .button-submit {
+          border: 1px solid #af9387;
+          background-color: #FFF;
+          font-size: 18px;
+          line-height: 20px;
+          color: #af9387;
+          padding: 10px;
+          border-radius: 5px;
+          transition: all 0.3s;
+
+          &:hover {
+            border: 1px solid #af9387;
+            background-color: #af9387;
+            color: #fff;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+}

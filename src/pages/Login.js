@@ -14,8 +14,7 @@ const Login = () => {
         <div className="view--login">
             <div className="container-login">
                 <div className="left-form">
-                    <div className="title">Brumaire</div>
-                    <img className="image-login" src="" alt=""/>
+                    <div className="title-form">Brumaire</div>
                 </div>
                 <div className="right-form">
                     <form onSubmit={handleSubmit(onSubmit)} className="form-login">

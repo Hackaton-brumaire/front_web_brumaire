@@ -81,12 +81,25 @@
         margin-top: 20px;
         display: flex;
         flex-direction: column;
+        .content-description{
+          font-size: 24px;
+          line-height: 26px;
+          color: #af9387;
+          text-align: center;
+          font-weight: 500;
+          margin-bottom: 10px;
+          &.font{
+            font-size:16px;
+            line-height: 18px;
+            margin-bottom: 20px;
+          }
+        }
         .content-change{
           display: flex;
           align-items: center;
           img{
-            width: 200px;
-            height: 300px;
+            width: 100px;
+            height: 100px;
           }
           .button-change-coupon{
             margin-left: 30px;
@@ -120,9 +133,10 @@
           }
         }
         .content-display-coupon{
+          margin-top: 30px;
           display: flex;
           flex-direction: column;
-          padding: 20px;
+          padding: 5px 20px 10px 5px;
           width: 100%;
           background-color: #fff;
           border: 1px solid #af9387;
@@ -132,10 +146,9 @@
             align-items: center;
             justify-content:center;
             img{
-              width: 50px;
-              height:50px;
-              transform:rotate(90deg);
-              margin-right: 100px;
+              width: 150px;
+              height:100px;
+              margin-right: 50px;
             }
             .title-container{
               display: flex;

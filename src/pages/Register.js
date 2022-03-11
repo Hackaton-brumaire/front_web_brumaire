@@ -13,28 +13,28 @@ const Register = () => {
     return (
         <div className="view--register">
             <div className="container-register">
-                <div className="left-form" style={{backgroundImage: "https://global-uploads.webflow.com/5f1a994364b3473c65835692/6141ca7a85516e850583a86c_Scoot_Beige.jpg"}}>
+                <div className="left-form" >
                     <div className="title-form">Bumaire Register</div>
                 </div>
                 <div className="right-form">
                     <form onSubmit={handleSubmit(onSubmit)} className="form-login">
                         <div className="container-input">
                             <div className="title-input">Username</div>
-                            <input {...register('username', { required: true })} />
+                            <input {...register('username', { required: true, maxLength: 50,minLength:4 })} />
                         </div>
                         <div className="container-input">
                             <div className="title-input">Password</div>
-                            <input {...register('password', { required: true })} />
+                            <input {...register('password', { required: true , minLength:5})} />
                         </div>
                         <div className="container-input">
                             <div className="title-input">ScooterId</div>
                             <input {...register('scooterId', { required: true })} />
                         </div>
                         <div className="container-input">
-                            <div className="title-input">mail</div>
+                            <div className="title-input">E-mail</div>
                             <input {...register('mail', { required: true })} />
                         </div>
-                        <button className="button-submit">Connexion</button>
+                        <button className="button-submit">Inscription</button>
                     </form>
 
                 </div>
