@@ -19,12 +19,10 @@ const App =  () => {
             <Route path="/login" exact component={login} />
             <Route path="/register" exact component={register} />
             <Route path="/profile" exact component={Profile} />
-
             <Route path="/map" exact component={MapScooterReload} />
             <Route path="/" exact component={Home} />
         </Switch>
       </Router>
-
   );
 }
 
